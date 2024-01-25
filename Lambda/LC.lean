@@ -39,7 +39,7 @@ notation: 6 lhs:6 " ⬝ " rhs:7 => call lhs at rhs
 notation: 6 " check " check_term " is " condition " then " true_result " else " default => Term.If check_term condition true_result default
 -- Mu
 notation: 5 " μ " name: 5 " <> " block_term: 7 => Term.mu name block_term
-#eval μ `1 <> term 2
+#eval μ (` "hahah") <> term 2
 
 def one := succ zero
 def two := succ one
